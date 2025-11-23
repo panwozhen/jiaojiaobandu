@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叫叫书房 - 专业青少年阅读与语文素养培养</title>
+    <style>
+        /* 基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            background-color: #f9f5eb;
+        }
+        
+        /* 头部样式 */
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .logo { font-size: 2.8rem; margin-bottom: 1rem; }
+        .slogan { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* 主要内容区 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* 校区简介部分 */
+        .intro {
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .intro h2 {
+            color: #8B4513;
+            border-left: 4px solid #D2691E;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* 特色区域 */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-img {
+            height: 200px;
+            background-color: #e6d2b5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B4513;
+            font-size: 1.5rem;
+        }
+        .feature-content {
+            padding: 1.5rem;
+        }
+        .feature-content h3 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+        
+        /* 联系信息 */
+        .contact {
+            background: #8B4513;
+            color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact h2 { margin-bottom: 1.5rem; }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .features { flex-direction: column; }
+            .feature-card { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1 class="logo">叫叫书房</h1>
+        <p class="slogan">12年专业积淀 · 让阅读滋养生命</p>
+    </header>
+    
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 校区简介 -->
+        <section class="intro">
+            <h2>欢迎来到叫叫书房</h2>
+            <p>叫叫书房坐落于长乐区航城地铁口旁万星广场1号楼1818室，拥有12年成熟教研积淀的专业阅读体系，长期致力于青少年儿童的深度阅读和大语文素养培养。</p>
+            <p>我们相信，阅读不仅是学习的手段，更是滋养生命的源泉。在这里，我们为孩子们打造了一个融合自由阅读与专业指导的成长空间。</p>
+        </section>
+        
+        <!-- 特色区域 -->
+        <div class="features">
+            <!-- 一层书廊 -->
+            <div class="feature-card">
+                <div class="feature-img">千册公益书廊</div>
+                <div class="feature-content">
+                    <h3>一层 · 千册公益书廊</h3>
+                    <p>拥有逾千本精选藏书，涵盖儿童文学、科普读物、经典名著等，免费向社区开放。我们鼓励孩子们在轻松自在的环境中，发现阅读的乐趣，培养终身受益的阅读习惯。</p>
+                </div>
+            </div>
+            
+            <!-- 二层教学区 -->
+            <div class="feature-card">
+                <div class="feature-img">专业教学空间</div>
+                <div class="feature-content">
+                    <h3>二层 · 专业教学空间</h3>
+                    <p>配备明亮舒适的教室，专注于小班制教学，确保每位学生都能获得充分的关注与指导。我们的课程体系基于12年教研积淀，旨在提升学生的深度阅读能力与综合语文素养。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 联系信息 -->
+        <section class="contact">
+            <h2>预约参观 & 课程咨询</h2>
+            <p>地址：长乐区航城地铁口旁万星广场1号楼1818室</p>
+            <p>电话：请添加您的联系电话</p>
+            <p>微信：请添加您的微信账号</p>
+        </section>
+    </div>
+</body>
+</html>
